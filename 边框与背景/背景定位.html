@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景定位</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 100%;
+            padding: 80px 0;
+        }
+
+        .box > div {
+            width: 229px;
+            height: 139px;
+            margin: 10px auto;
+            color: #f4f0ea;
+            padding: 16px 29px 28px 20px;
+            /* 背景色 背景图片 <repeat-style>  */
+            /*
+                bottom right / 70px 60px
+                背景图片位置  / 背景图片宽高
+            */
+            background: #b4a078 url("images/bg.png") no-repeat bottom right / 70px 60px;
+        }
+        .box .block1 {
+            background-position: right 50px bottom 30px;
+        }
+
+        .box .block2 {
+            /**
+                background-origin: 规定了指定背景图片background-image属性的原点位置的背景相对区域
+                    注意：当使用background-attachment为fixed时，该属性将忽略不起作用
+                    初始值: padding-box
+                    继承性: 否
+                    属性值:
+                        border-box
+                            背景图片的摆放以border区域为参考
+                        padding-box
+                            背景图片的摆放以padding区域为参考
+                        content-box
+                            背景图片的摆放以content区域为参考
+             */
+            -webkit-background-origin: content-box;
+            background-origin: content-box;
+        }
+
+        .box .block3 {
+            background-position: calc(100% - 30px) calc(100% - 30px);
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="block1">background-postion方案</div>
+    <div class="block2">background-origin方案</div>
+    <div class="block3">calc方案</div>
+</div>
+</body>
+</html>
