@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Lusitana);
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Varela Round";
+    background: #444444;
+}
+
+#header {
+    background: url("images/Cloud_sky_over_Brest.jpg") no-repeat center top;
+    background-size: cover;
+    position: fixed;
+    height: 90%;
+    bottom: 10%;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+
+#header .center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+#header .center .middle {
+    position: absolute;
+    margin-top: -8rem;
+    left: 0;
+    right: 0;
+    top: 50%;
+}
+
+#header .center .middle h1 {
+    font-family: "Lusitana";
+    font-weight: normal;
+    line-height: 1;
+    font-size: 11rem;
+    color: white;
+    margin: 0;
+}
+
+#header .center .middle span {
+    line-height: 5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+#pageHr {
+    background: #FFFFFF;
+    position: relative;
+    height: 5px;
+    display: block;
+    right: 0;
+    left: 0;
+    top: 90%;
+    z-index: 1;
+}
+#pageHr > i {
+    margin: -25px;
+    border: 5px solid #FFFFFF;
+    width: 40px;
+    height: 40px;
+    background-color: #48CFAD;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+#pageHr > i > i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: absolute;
+    display: block;
+    transform: rotate(-45deg);
+}
+
+#page {
+    background: #37BC98;
+    position: relative;
+    height: 123.45%;
+    top: 90%;
+    padding: 10% 40px;
+    text-align: center;
+}
+
+#page a {
+    color: #fff;
+}
