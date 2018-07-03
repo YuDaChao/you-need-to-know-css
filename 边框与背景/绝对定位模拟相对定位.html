@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位模拟相对定位</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /*去除系统滚动条*/
+        html {
+            overflow: hidden;
+            height: 100%;
+        }
+        /*让滚动条出现在body上*/
+        body {
+            overflow: scroll;
+            height: 100%;
+        }
+        /*--------------*/
+        .wrap {
+            height: 3000px;
+
+        }
+        .abs {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="abs"></div>
+    </div>
+</body>
+</html>
